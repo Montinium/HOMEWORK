@@ -1,0 +1,32 @@
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вгадай число</title>
+    <style>
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Вгадай число</h1>
+    <p>Спробуйте вгадати число, яке я думаю від 1 до 100!</p>
+
+    <form id="guessForm">
+        <label for="guess">Твоя відповідь:</label>
+        <input type="number" id="guess" name="guess" placeholder="Введи свою відповідь" min="1" max="100" required>
+        <button type="submit">Надіслати</button>
+    </form>
+
+    <div id="result" style="display: none;">
+        <h2>Результат</h2>
+        <p id="resultText"></p>
+    </div>
+
+    <p id="scoreText">Рахунок: 0</p>
+
+    <button id="resetGame" style="display: none;">Грати Знову</button>
+
+    <script src="java.js"></script>
+</body>
+</html>
